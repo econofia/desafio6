@@ -21,7 +21,7 @@ const messages = [
 io.on("connection", function (socket) {
   console.log("Un cliente se ha conectado");
   socket.emit("messages", messages);
-
+ 
 
   // cuando el servidor recibe un nuevo mensaje, lo agarra y lo suma al const de messages para transmitirselo a todo el resto.
   //Es un push al array mensajes.

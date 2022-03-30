@@ -6,20 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="/socket.io/socket.io.js"></script>
     <script src="main.js"></script>
-    <title>My Chat App</title>
+    <script src="/array.js"></script>
+
+
+    <title>Mis productos</title>
 </head>
 <body>
-    <h1>My Chat App</h1>
-    <div id="messages"></div> // para llenar con todos los mensajes que lleguen
-
+    <h1>Mis productos</h1>
+    <div href="/array.js"></div>
+    <div id="messages"></div> 
+        
     <form onsubmit="addMessage(this)">
-        <input type="text" id="username" placeholder="Tu Nombre" >
-        <input type="text" id="texto" placeholder="Cuéntanos algo...">
+        <input type="text" id="username" placeholder="ingresatumail@gmail.com" >
+        <input type="text" id="texto" style="color: forestgreen;" placeholder="Ingresa un mensaje">
         <input type="submit" value="Enviar">
     </form>
 </body>
 </html>
 
-//El index.html enlaza tanto el main.js como el script de socket.io. Recordemos que esta librería funciona tanto en cliente como servidor precisamente para conseguir la conexión bidireccional.
+
 
 
